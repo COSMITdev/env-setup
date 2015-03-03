@@ -30,7 +30,7 @@ declare -a APT_PACKAGES=(
     "postgresql"
     "postgresql-contrib"
     "sublime-text"
-
+    "terminator"
 )
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
