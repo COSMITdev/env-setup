@@ -11,6 +11,50 @@ alias ....="cd ../../.."
 alias cd..="cd .."
 
 # ----------------------------------------------------------------------
+# | Git                                                                |
+# ----------------------------------------------------------------------
+
+alias gba="git branch -a"
+alias gcm="git checkout master"
+alias glpp="git log --pretty=oneline"
+alias gs="git status"
+alias gd="git diff"
+alias gp="git pull"
+alias gci="git commit --interactive"
+alias ga="git add"
+alias gmt="git mergetool"
+alias gpom="git push origin master"
+alias gppm="git push production master"
+alias gr="git rebase -i HEAD~10"
+alias gc="git commit -m "
+alias gri="git add --all && git commit -m 'WIP' && git rebase -i HEAD~10"
+alias rebase_master="git checkout master && git pull origin master && git checkout - && git rebase master"
+alias merge_master="git checkout master && git pull --rebase && git checkout - && git rebase master && git checkout master && git merge -"
+alias delete_merged="git branch --merged | grep -v '^* master$' | grep -v '^  master$' | xargs git branch -d"
+
+# ----------------------------------------------------------------------
+# | Rails                                                              |
+# ----------------------------------------------------------------------
+
+alias rc="bin/rails c"
+alias rs="bin/rails s"
+alias gib="gem install bundler"
+alias gibp="gem install bundler --pre"
+alias bi="bundle install"
+alias bu="bundle update"
+alias bx="bundle exec"
+alias bs="bundle exec rspec"
+alias bir="bundle install --relock"
+alias brake="bin/rake"
+alias brails="bin/rails"
+alias migrate="bin/rake db:migrate"
+alias rspec="bundle exec rspec"
+alias thin="bundle exec thin"
+alias remakedb="bin/rake db:drop db:create db:migrate && bin/rake db:seed"
+alias remaketest="bin/rake db:drop db:create db:migrate RAILS_ENV=test"
+alias remakedbs="bin/rake db:drop db:create db:migrate && bin/rake db:seed && bin/rake db:drop db:create db:migrate RAILS_ENV=test"
+
+# ----------------------------------------------------------------------
 # | Network                                                            |
 # ----------------------------------------------------------------------
 
