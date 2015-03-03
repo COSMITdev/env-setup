@@ -136,7 +136,7 @@ requirements by using the following files:
 
 If the `~/.bash.local` file exist, it will be automatically sourced
 after all the other [bash related
-files](https://github.com/alrra/dotfiles/tree/master/shell), thus,
+files](https://github.com/codelandev/init-setup/tree/master/shell), thus,
 allowing its content to add to or overwrite the existing aliases,
 settings, PATH, etc.
 
@@ -146,8 +146,8 @@ Here is a very simple example of a `~/.bash.local` file:
 
 #!/bin/bash
 
-declare -r GIT_USER_EMAIL="alrra@example.com"
-declare -r GIT_USER_NAME="Cătălin Mariș"
+declare -r GIT_USER_EMAIL="codeland@example.com"
+declare -r GIT_USER_NAME="CODELAND web development"
 
 # ----------------------------------------------------------------------
 
