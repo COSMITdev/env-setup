@@ -181,28 +181,6 @@ set_keyboard_preferences() {
 }
 
 # ----------------------------------------------------------------------
-# | Language & Region                                                  |
-# ----------------------------------------------------------------------
-
-set_language_and_region_preferences() {
-
-    # Set language and text formats
-    defaults write NSGlobalDomain AppleLanguages -array "en" "ro"
-    defaults write NSGlobalDomain AppleLocale -string "en_RO@currency=EUR"
-    defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
-    defaults write NSGlobalDomain AppleMetricUnits -bool true
-
-    # Disable auto-correct
-    #defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
-    #defaults write NSGlobalDomain WebAutomaticSpellingCorrectionEnabled -bool false
-
-    # Set the timezone
-    # (see `systemsetup -listtimezones` for other values)
-    sudo systemsetup -settimezone "Europe/Bucharest" &> /dev/null
-
-}
-
-# ----------------------------------------------------------------------
 # | Maps                                                               |
 # ----------------------------------------------------------------------
 
@@ -354,34 +332,6 @@ set_trackpad_preferences() {
 }
 
 # ----------------------------------------------------------------------
-# | Transmission.app                                                   |
-# ----------------------------------------------------------------------
-
-set_transmission_preferences() {
-
-    # Delete the original torrent files
-    defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
-
-    # Don’t prompt for confirmation before downloading
-    defaults write org.m0k.transmission DownloadAsk -bool false
-
-    # Use `~/Downloads` to store complete downloads
-    defaults write org.m0k.transmission DownloadChoice -string "Constant"
-    defaults write org.m0k.transmission DownloadFolder -string "$HOME/Downloads";
-
-    # Use `~/Downloads/torrents` to store incomplete downloads
-    defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
-    defaults write org.m0k.transmission IncompleteDownloadFolder -string "$HOME/Downloads/torrents"
-
-    # Hide the donate message
-    defaults write org.m0k.transmission WarningDonate -bool false
-
-    # Hide the legal disclaimer
-    defaults write org.m0k.transmission WarningLegal -bool false
-
-}
-
-# ----------------------------------------------------------------------
 # | UI/UX                                                              |
 # ----------------------------------------------------------------------
 
@@ -486,13 +436,11 @@ main() {
     execute "set_dock_preferences" "Dock"
     execute "set_finder_preferences" "Finder"
     execute "set_keyboard_preferences" "Keyboard"
-    execute "set_language_and_region_preferences" "Language & Region"
     execute "set_maps_preferences" "Maps"
     execute "set_safari_preferences" "Safari"
     execute "set_terminal_preferences" "Terminal"
     execute "set_textedit_preferences" "TextEdit"
     execute "set_trackpad_preferences" "Trackpad"
-    execute "set_transmission_preferences" "Transmission"
     execute "set_ui_and_ux_preferences" "UI & UX"
 
     for i in ${!PROCESSES_TO_TERMINATE[*]}; do
