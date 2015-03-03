@@ -1,4 +1,4 @@
-# [Cătălin](https://github.com/alrra)’s dotfiles
+# [CODELAND](https://github.com/codelandev)’s init-setup
 
 ## Setup
 
@@ -6,15 +6,15 @@ To setup the dotfiles just run one of the following snippets in the terminal:
 
 | OS | Snippet |
 |:---:|:---|
-| OS X | `bash -c "$(curl -LsS https://raw.github.com/alrra/dotfiles/master/dotfiles)"` |
-| Ubuntu | `bash -c "$(wget -qO - https://raw.github.com/alrra/dotfiles/master/dotfiles)"` |
+| OS X | `bash -c "$(curl -LsS https://raw.github.com/codelandev/init-setup/master/dotfiles)"` |
+| Ubuntu | `bash -c "$(wget -qO - https://raw.github.com/codelandev/init-setup/master/dotfiles)"` |
 
 That's it! :sparkles:
 
 The setup process will:
 
 * Download the dotfiles on your computer (by default it will suggest
-  `~/projects/dotfiles`)
+  `~/.dotfiles`)
 * Create some additional [directories](os/create_directories.sh)
 * [Copy](os/copy_files.sh) / [Symlink](os/create_symbolic_links.sh) the
   [git](git),
