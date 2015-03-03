@@ -15,26 +15,21 @@ declare -a APT_PACKAGES=(
     #"ubuntu-restricted-extras"
 
     # Other
-    "atom"
-    "chromium-browser"
     "curl"
     "firefox-trunk"
     "flashplugin-installer"
-    "gimp"
     "git"
-    "google-chrome-unstable"
+    "google-chrome"
     "imagemagick"
-    "nautilus-dropbox"
     "nodejs"
     "npm"
-    "opera"
-    "opera-next"
     "transmission"
     "vim-gnome"
-    "virtualbox"
     "vlc"
     "xclip"
-    "zopfli"
+    "postgresql"
+    "postgresql-contrib"
+    "sublime-text"
 
 )
 
@@ -51,10 +46,10 @@ add_ppa() {
 }
 
 add_software_sources() {
-
-    # Atom
-    [ $(cmd_exists "atom") -eq 1 ] \
-        && add_ppa "webupd8team/atom"
+    
+    # Sublime Text 2
+    [ $(cmd_exists "sublime-text") -eq 1 ] \
+        && add_ppa "ppa:webupd8team/sublime-text-2"
 
     # Firefox Nightly
     [ $(cmd_exists "firefox-trunk") -eq 1 ] \
@@ -71,12 +66,6 @@ add_software_sources() {
     [ $(cmd_exists "node") -eq 1 ] \
         && add_ppa "chris-lea/node.js"
 
-    # Opera & Opera Next
-    [ $(cmd_exists "opera") -eq 1 ] \
-        && add_key "http://deb.opera.com/archive.key" \
-        && add_source_list \
-                "http://deb.opera.com/opera/ stable non-free" \
-                "opera.list"
 
 }
 
