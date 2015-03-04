@@ -12,6 +12,8 @@ declare -a HOMEBREW_FORMULAE=(
     "imagemagick --with-webp"
     "node"
     "vim --override-system-vi"
+    "rbenv"
+    "ruby-build"
 )
 
 # Homebrew Casks
@@ -72,6 +74,7 @@ main() {
         # Homebrew formulae
         for i in ${!HOMEBREW_FORMULAE[*]}; do
             tmp="${HOMEBREW_FORMULAE[$i]}"
+            print_installing "$tmp"
             [ $(brew list "$tmp" &> /dev/null; printf $?) -eq 0 ] \
                 && print_success "$tmp" \
                 || execute "brew install $tmp" "$tmp"
@@ -84,6 +87,7 @@ main() {
 
             for i in ${!HOMEBREW_CASKS[*]}; do
                 tmp="${HOMEBREW_CASKS[$i]}"
+                print_installing "$tmp"
                 [ $(brew cask list "$tmp" &> /dev/null; printf $?) -eq 0 ] \
                     && print_success "$tmp" \
                     || execute "brew cask install $tmp" "$tmp"
@@ -97,6 +101,7 @@ main() {
             if [ $(brew tap | grep "caskroom/versions" &> /dev/null; printf $?) -eq 0 ]; then
                 for i in ${!HOMEBREW_ALTERNATE_CASKS[*]}; do
                     tmp="${HOMEBREW_ALTERNATE_CASKS[$i]}"
+                    print_installing "$tmp"
                     [ $(brew cask list "$tmp" &> /dev/null; printf $?) -eq 0 ] \
                         && print_success "$tmp" \
                         || execute "brew cask install $tmp" "$tmp"
