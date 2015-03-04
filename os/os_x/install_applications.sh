@@ -38,6 +38,7 @@ declare -a HOMEBREW_CASKS=(
     "mou"
     "telegram"
     "caffeine"
+    "google-plus-auto-backup"
 )
 
 # Homebrew Alternate Casks
