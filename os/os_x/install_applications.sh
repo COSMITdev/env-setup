@@ -39,6 +39,7 @@ declare -a HOMEBREW_CASKS=(
     "telegram"
     "caffeine"
     "google-plus-auto-backup"
+    "rescuetime"
 )
 
 # Homebrew Alternate Casks
