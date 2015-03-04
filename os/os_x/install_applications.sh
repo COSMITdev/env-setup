@@ -19,7 +19,7 @@ declare -a HOMEBREW_FORMULAE=(
 
 declare -a HOMEBREW_CASKS=(
     "firefox"
-    "google-chrome""
+    "google-chrome"
     "macvim"
     "spectacle"
     "vlc"
@@ -36,7 +36,6 @@ declare -a HOMEBREW_CASKS=(
 # https://github.com/caskroom/homebrew-versions
 
 declare -a HOMEBREW_ALTERNATE_CASKS=(
-    ""
 )
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
