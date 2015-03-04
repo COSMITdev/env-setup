@@ -14,6 +14,7 @@ declare -a HOMEBREW_FORMULAE=(
     "vim --override-system-vi"
     "rbenv"
     "ruby-build"
+    "heroku-toolbelt"
 )
 
 # Homebrew Casks
