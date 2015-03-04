@@ -32,6 +32,7 @@ declare -a HOMEBREW_CASKS=(
     "iterm2"
     "postgres"
     "utorrent"
+    "slack"
 )
 
 # Homebrew Alternate Casks
