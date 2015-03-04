@@ -44,9 +44,9 @@
     old = red
 
 [color "status"]
-    added = green reverse
-    changed = yellow reverse
-    untracked = red reverse
+    added = green
+    changed = yellow
+    untracked = red
 
 [core]
     attributesfile = ~/.gitattributes
