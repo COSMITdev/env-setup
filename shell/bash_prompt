@@ -151,6 +151,19 @@ get_git_repository_details() {
 
 }
 
+# ----------------------------------------------------------------------
+# | Ruby Version function                                              |
+# ----------------------------------------------------------------------
+
+ruby_version() {
+  RUBY_VERSION="$(rbenv which ruby | cut -d/ -f6)"
+  if [ "$RUBY_VERSION" = '' ]
+    then
+      RUBY_VERSION="system"
+  fi
+  echo "$RUBY_VERSION"
+}
+
 set_prompts() {
 
     local black="" blue="" bold="" cyan="" green="" orange="" \
@@ -208,11 +221,11 @@ set_prompts() {
                                     # current working directory)
     PS1+="\[$bold\]"
     PS1+="\[$orange\]\u"            # Username
-    PS1+="\[$white\]@"
-    PS1+="\[$yellow\]\h"            # Host
+    # PS1+="\[$white\]@"
+    # PS1+="\[$yellow\]\h"            # Host
     PS1+="\[$white\]: "
-    PS1+="\[$green\]\w"             # Working directory
-    PS1+="\$(get_git_repository_details \"$white on $cyan\")"
+    PS1+="\[$green\]\W"             # Working directory
+    PS1+="\$(get_git_repository_details \"$white on $cyan\") $yellow[$(ruby_version)]"
     PS1+="\n"
     PS1+="\[$reset$white\]\$ \[$reset\]"
 
@@ -264,6 +277,7 @@ set_prompts() {
     export PS4
 
 }
+
 
 # ----------------------------------------------------------------------
 # | Main                                                               |
