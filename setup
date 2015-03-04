@@ -302,9 +302,9 @@ main() {
             ./os/initialize_git_repository.sh "$DOTFILES_ORIGIN"
         fi
 
-        print_info "Update content"
+        print_info "Configure Git"
 
-        ask_for_confirmation "Do you want to update the content from the 'dotfiles' directory?"
+        ask_for_confirmation "Do you want to configure your git informations?"
         printf "\n"
 
         if answer_is_yes; then
