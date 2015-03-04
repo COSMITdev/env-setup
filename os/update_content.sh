@@ -56,6 +56,12 @@ set_github_ssh_key() {
 
 }
 
+setup_heroku() {
+    print_info "Set up Heroku key"
+    heroku login
+    heroku keys:add
+}
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 main() {
@@ -72,6 +78,8 @@ main() {
             && git clean -fd  &> /dev/null
 
         print_result $? "Update content"
+        
+        setup_heroku
 
     fi
 
