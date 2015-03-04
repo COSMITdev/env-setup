@@ -40,6 +40,7 @@ declare -a HOMEBREW_CASKS=(
     "caffeine"
     "google-plus-auto-backup"
     "rescuetime"
+    "tuxera-ntfs"
 )
 
 # Homebrew Alternate Casks
