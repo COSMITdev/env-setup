@@ -110,3 +110,8 @@ print_success() {
     # Print output in green
     printf "\e[0;32m  [✔] $1\e[0m\n"
 }
+
+print_installing() {
+    # Print output in green
+    printf "\e[0;32m  Installing $1\e[0m\n"
+}
