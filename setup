@@ -236,7 +236,7 @@ main() {
         printf "\n"
 
         if answer_is_yes; then
-            sudo ./os/install_rbenv_and_ruby_build.sh
+            execute "brew install rbenv ruby-build"
         fi
     elif [ "$OS" == "ubuntu" ]; then
         printf "rBenv and Ruby-build are present just to OSX \n"
