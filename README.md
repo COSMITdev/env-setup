@@ -15,7 +15,7 @@ The setup process will:
 
 * Download the dotfiles on your computer (by default it will suggest
   `~/.dotfiles`)
-* Install [rBenv and Ruby-build](os/install_rbenv_and_ruby_build.sh) (OS X only, for now)
+* Install rBenv and Ruby-build (OS X only, for now)
 * Create some additional [directories](os/create_directories.sh)
 * [Copy](os/copy_files.sh) / [Symlink](os/create_symbolic_links.sh) the
   [git](git),
