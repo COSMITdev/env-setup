@@ -41,6 +41,7 @@ declare -a HOMEBREW_CASKS=(
     "google-plus-auto-backup"
     "rescuetime"
     "tuxera-ntfs"
+    "skype"
 )
 
 # Homebrew Alternate Casks
