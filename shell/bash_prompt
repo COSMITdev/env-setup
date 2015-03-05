@@ -225,7 +225,8 @@ set_prompts() {
     # PS1+="\[$yellow\]\h"            # Host
     PS1+="\[$white\]: "
     PS1+="\[$green\]\W"             # Working directory
-    PS1+="\$(get_git_repository_details \"$white on $cyan\") $yellow[$(ruby_version)]"
+    PS1+="\$(get_git_repository_details \"$white on $cyan\") $yellow[$(ruby_version)] "
+    PS1+="\[$red\][\t]"             # Time
     PS1+="\n"
     PS1+="\[$reset$white\]\$ \[$reset\]"
 
