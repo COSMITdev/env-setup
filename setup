@@ -270,7 +270,7 @@ main() {
 
     if answer_is_yes; then
         if [ "$OS" == "osx" ]; then
-            cd ~/Library/Application\ Support/ && mkdir Sublime\ Text\ 2/ && git clone git@github.com:mpatrick/sublime-settings.git Sublime\ Text\ 2/ && ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+            cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/ && rm -rf User/ && git clone git@github.com:mpatrick/sublime-settings.git
         elif [ "$OS" == "ubuntu" ]; then
             cd ~/.config && mkdir sublime-text-2 && git clone git@github.com:mpatrick/sublime-settings.git sublime-text-2
         fi
