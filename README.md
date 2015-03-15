@@ -55,7 +55,7 @@ The setup process will:
     <tbody>
         <tr>
             <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/6263679/82b79a6e-b823-11e4-8211-9e55e971ca4d.png" alt="Output for Git status on OS X" width="100%">
+                <img src="https://raw.githubusercontent.com/codelandev/init-setup/images/images/Screen%20Shot%202015-03-15%20at%201.02.38%20AM.png" alt="Output for Git status on OS X" width="100%">
             </td>
             <td>
                 <img src="https://cloud.githubusercontent.com/assets/1223565/6263677/82b4d432-b823-11e4-9832-69a27da75dda.png" alt="Output for Git status on Ubuntu" width="100%">
