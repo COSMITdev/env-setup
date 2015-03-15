@@ -130,10 +130,10 @@ The setup process will:
     <tbody>
         <tr>
             <td>
-              <img src="/Users/patrick/Desktop/Screen Shot 2015-03-10 at 6.35.57 PM.png" alt="Sublime Text on OS X" width="100%">
+              <img src="https://raw.githubusercontent.com/codelandev/init-setup/images/images/Screen%20Shot%202015-03-10%20at%206.35.57%20PM.png" alt="Sublime Text on OS X" width="100%">
             </td>
             <td>
-              <img src="/Users/patrick/Desktop/Screen Shot 2015-03-10 at 6.35.57 PM.png" alt="Sublime Text ON Ubuntu" width="100%">
+              <img src="https://raw.githubusercontent.com/codelandev/init-setup/images/images/Screen%20Shot%202015-03-10%20at%206.35.57%20PM.png" alt="Sublime Text ON Ubuntu" width="100%">
             </td>
         </tr>
         <tr>
