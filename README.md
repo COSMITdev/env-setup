@@ -125,6 +125,23 @@ The setup process will:
     </tbody>
 </table>
 
+* Sublime Text
+  <table>
+    <tbody>
+        <tr>
+            <td>
+              <img src="/Users/patrick/Desktop/Screen Shot 2015-03-10 at 6.35.57 PM.png" alt="Sublime Text on OS X" width="100%">
+            </td>
+            <td>
+              <img src="/Users/patrick/Desktop/Screen Shot 2015-03-10 at 6.35.57 PM.png" alt="Sublime Text ON Ubuntu" width="100%">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">OS X</td>
+            <td align="center">Ubuntu</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Customize
 
