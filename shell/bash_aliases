@@ -216,3 +216,13 @@ if [ "$OS" == "osx" ]; then
     alias use-node="brew unlink iojs && brew link --force node"
     alias use-iojs="brew unlink node && brew link --force iojs"
 fi
+
+# - - - - - - - - - 
+
+# Open sublime and SourceTree
+
+if [ "$OS" == "osx" ]; then
+    alias code="subl . && stree"
+elif [ "$OS" == "ubuntu" ]; then
+    alias code="subl ."
+fi
