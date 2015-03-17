@@ -13,3 +13,7 @@ set completion-ignore-case on
 
 # Auto list TAB completions
 set show-all-if-ambiguous off
+
+# Auto complete last iniated command (like git clone ... upkey and complete with last git clone command)
+"\e[A": history-search-backward
+"\e[B": history-search-forward
