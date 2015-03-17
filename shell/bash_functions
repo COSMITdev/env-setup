@@ -240,3 +240,14 @@ hrfs() {
     #                          └─ add commas to the numbers
     #                             (changes "1023.2 KB" to "1,023.2 KB")
 }
+
+# ----------------------------------------------------------------------
+# | Search web                                                         |
+# ----------------------------------------------------------------------
+
+# Just hit google and a string to search and you're good to go
+# This will open google search in prefered browser
+
+google() {
+ open "http://www.google.com/search?q= $1"
+}
