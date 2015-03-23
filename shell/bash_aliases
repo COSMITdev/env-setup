@@ -55,6 +55,13 @@ alias remaketest="bin/rake db:drop db:create db:migrate RAILS_ENV=test"
 alias remakedbs="bin/rake db:drop db:create db:migrate && bin/rake db:seed && bin/rake db:drop db:create db:migrate RAILS_ENV=test"
 
 # ----------------------------------------------------------------------
+# | Heroku                                                             |
+# ----------------------------------------------------------------------
+
+alias prod_logs="heroku logs -t --remote production"
+alias stag_logs="heroku logs -t --remote staging"
+
+# ----------------------------------------------------------------------
 # | Network                                                            |
 # ----------------------------------------------------------------------
 
@@ -217,12 +224,12 @@ if [ "$OS" == "osx" ]; then
     alias use-iojs="brew unlink node && brew link --force iojs"
 fi
 
-# - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Open sublime and SourceTree
 
 if [ "$OS" == "osx" ]; then
-    alias code="subl . && stree"
+    alias code="subl . && stree && open -a ~/Applications/Google\ Chrome.app 'http://localhost:3000' && rs"
 elif [ "$OS" == "ubuntu" ]; then
     alias code="subl ."
 fi
