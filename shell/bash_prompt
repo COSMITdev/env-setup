@@ -156,12 +156,12 @@ get_git_repository_details() {
 # ----------------------------------------------------------------------
 
 ruby_version() {
-  RUBY_VERSION="$(rbenv which ruby | cut -d/ -f6)"
+  RUBY_VERSION="$(rbenv version-name)"
   if [ "$RUBY_VERSION" = '' ]
     then
       RUBY_VERSION="system"
   fi
-  echo "$RUBY_VERSION"
+  printf "$RUBY_VERSION"
 }
 
 set_prompts() {
@@ -220,13 +220,15 @@ set_prompts() {
     PS1="\[\033]0;\w\007\]"         # Terminal title (set to the
                                     # current working directory)
     PS1+="\[$bold\]"
-    PS1+="\[$orange\]\u"            # Username
+    # PS1+="\[$orange\]\u"            # Username
     # PS1+="\[$white\]@"
     # PS1+="\[$yellow\]\h"            # Host
-    PS1+="\[$white\]: "
+    # PS1+="\[$white\]: "
     PS1+="\[$green\]\W"             # Working directory
-    PS1+="\$(get_git_repository_details \"$white on $cyan\") $yellow[$(ruby_version)] "
-    PS1+="\[$red\][\t]"             # Time
+    PS1+="\$(get_git_repository_details \"$white on $cyan\") "
+    PS1+="$yellow[\$(ruby_version)] "
+    PS1+="\[$red\][\t]"               # Time
+    PS1+=" ⚡"
     PS1+="\n"
     PS1+="\[$reset$white\]\$ \[$reset\]"
 
