@@ -42,6 +42,7 @@ declare -a HOMEBREW_CASKS=(
     "rescuetime"
     "tuxera-ntfs"
     "skype"
+    "atom"
 )
 
 # Homebrew Alternate Casks
