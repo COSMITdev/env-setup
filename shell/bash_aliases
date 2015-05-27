@@ -226,10 +226,10 @@ fi
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# Open sublime and SourceTree
+# Open sublime/atom and SourceTree
 
 if [ "$OS" == "osx" ]; then
-    alias code="subl . && stree && open -a ~/Applications/Google\ Chrome.app 'http://localhost:3000' && rs"
+    alias code="atom . && stree && open -a ~/Applications/Google\ Chrome.app 'http://localhost:3000' && rs"
 elif [ "$OS" == "ubuntu" ]; then
     alias code="subl ."
 fi
