@@ -60,6 +60,8 @@ alias remakedbs="bin/rake db:drop db:create db:migrate && bin/rake db:seed && bi
 
 alias prod_logs="heroku logs -t --remote production"
 alias stag_logs="heroku logs -t --remote staging"
+alias reset_stag_db="heroku pg:reset --remote staging DATABASE && heroku run rake db:migrate --remote staging && heroku run rake db:seed --remote staging && heroku restart --remote staging"
+alias reset_prod_db="heroku pg:reset --remote production DATABASE && heroku run rake db:migrate --remote production && heroku run rake db:seed --remote production && heroku restart --remote production"
 
 # ----------------------------------------------------------------------
 # | Network                                                            |
@@ -226,7 +228,7 @@ fi
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# Open sublime/atom and SourceTree
+# Open sublime and SourceTree
 
 if [ "$OS" == "osx" ]; then
     alias code="atom . && stree && open -a ~/Applications/Google\ Chrome.app 'http://localhost:3000' && rs"
