@@ -80,6 +80,9 @@ set_finder_preferences() {
     defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
     defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
     defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
+    
+    # Show hidden files
+    defaults write com.apple.finder AppleShowAllFiles --bool true
 
     # Use full POSIX path as window title
     defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
