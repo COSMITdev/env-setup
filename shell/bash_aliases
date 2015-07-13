@@ -241,5 +241,5 @@ fi
 # | Tunneling / External tools                                         |
 # ----------------------------------------------------------------------
 tunnel() {
-    "lt -port $1"
+    "/usr/local/bin/lt --port $1"
 }
