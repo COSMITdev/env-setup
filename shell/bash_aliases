@@ -233,5 +233,12 @@ fi
 if [ "$OS" == "osx" ]; then
     alias code="atom . && stree && open -a ~/Applications/Google\ Chrome.app 'http://localhost:3000' && rs"
 elif [ "$OS" == "ubuntu" ]; then
-    alias code="subl ."
+    alias code="subl . && rs"
 fi
+
+# ----------------------------------------------------------------------
+# | Tunneling / External tools                                         |
+# ----------------------------------------------------------------------
+tunnel() {
+    "lt -port $1"
+}
