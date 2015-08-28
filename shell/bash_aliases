@@ -24,14 +24,16 @@ alias gci="git commit --interactive"
 alias ga="git add"
 alias gmt="git mergetool"
 alias gpom="git push origin master"
+alias gpsm="git push staging master"
 alias gppm="git push production master"
 alias gr="git rebase -i HEAD~10"
 alias gc="git commit -m "
 alias gri="git add --all && git commit -m 'WIP' && git rebase -i HEAD~10"
 alias rebase_master="git checkout master && git pull origin master && git checkout - && git rebase master"
+alias rebase_staging="git checkout staging && git pull origin staging && git checkout - && git rebase staging"
 alias merge_master="git checkout master && git pull --rebase && git checkout - && git rebase master && git checkout master && git merge -"
-alias delete_merged="git branch --merged | grep -v '^* master$' | grep -v '^  master$' | xargs git branch -d"
-alias clean_branches="git checkout master && git remote update --prune && delete_merged"
+alias delete_merged="git branch --merged | grep -v '^* master$' | grep -v '^  master$' | grep -v '^* staging$' | grep -v '^  staging$' | xargs git branch -d"
+alias clean_branches="git checkout master && git pull origin master &&  git checkout staging && git pull origin staging && git remote update --prune && delete_merged"
 
 # ----------------------------------------------------------------------
 # | Rails                                                              |
@@ -61,6 +63,8 @@ alias remakedbs="bin/rake db:drop db:create db:migrate && bin/rake db:seed && bi
 
 alias prod_logs="heroku logs -t --remote production"
 alias stag_logs="heroku logs -t --remote staging"
+alias migrate_stag="heroku run rake db:migrate --remote staging"
+alias migrate_prod="heroku run rake db:migrate --remote production"
 alias reset_stag_db="heroku pg:reset --remote staging DATABASE && heroku run rake db:migrate --remote staging && heroku run rake db:seed --remote staging && heroku restart --remote staging"
 alias reset_prod_db="heroku pg:reset --remote production DATABASE && heroku run rake db:migrate --remote production && heroku run rake db:seed --remote production && heroku restart --remote production"
 
@@ -241,5 +245,5 @@ fi
 # | Tunneling / External tools                                         |
 # ----------------------------------------------------------------------
 tunnel() {
-    "/usr/local/bin/lt --port $1"
+  "/usr/local/bin/lt --port $1"
 }
