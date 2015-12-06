@@ -47,6 +47,7 @@ declare -a HOMEBREW_CASKS=(
     "alfred"
     "chitchat"
     "adobe-reader"
+    "switchresx"
 )
 
 # Homebrew Alternate Casks
