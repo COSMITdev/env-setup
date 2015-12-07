@@ -48,6 +48,7 @@ declare -a HOMEBREW_CASKS=(
     "chitchat"
     "adobe-reader"
     "switchresx"
+    "smcFanControl"
 )
 
 # Homebrew Alternate Casks
