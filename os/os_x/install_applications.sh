@@ -49,6 +49,7 @@ declare -a HOMEBREW_CASKS=(
     "adobe-reader"
     "switchresx"
     "smcFanControl"
+    "flux"
 )
 
 # Homebrew Alternate Casks
