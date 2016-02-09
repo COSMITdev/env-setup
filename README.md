@@ -55,7 +55,7 @@ The setup process will:
     <tbody>
         <tr>
             <td>
-                <img src="https://raw.githubusercontent.com/cosmitdev/env-setup/images/images/Screen%20Shot%202015-03-15%20at%201.02.38%20AM.png" alt="Output for Git status on OS X" width="100%">
+                <img src="https://cloud.githubusercontent.com/assets/1644530/12922769/f560f640-cf39-11e5-9fb4-a3bae076ab1f.png" alt="Output for Git status on OS X" width="100%">
             </td>
             <td>
                 <img src="https://cloud.githubusercontent.com/assets/1223565/6263677/82b4d432-b823-11e4-9832-69a27da75dda.png" alt="Output for Git status on Ubuntu" width="100%">
@@ -126,6 +126,7 @@ The setup process will:
 </table>
 
 ## Customize
+
 
 ### Local Settings
 
