@@ -23,9 +23,7 @@ declare -a APT_PACKAGES=(
     "imagemagick"
     "nodejs"
     "npm"
-    "transmission"
     "vim-gnome"
-    "vlc"
     "xclip"
     "postgresql"
     "postgresql-contrib"
@@ -46,7 +44,7 @@ add_ppa() {
 }
 
 add_software_sources() {
-    
+
     # Sublime Text 2
     [ $(cmd_exists "sublime-text") -eq 1 ] \
         && add_ppa "ppa:webupd8team/sublime-text-2"
