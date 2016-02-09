@@ -1,6 +1,6 @@
 #!/bin/bash
 
-declare -r GITHUB_REPOSITORY="codelandev/init-setup"
+declare -r GITHUB_REPOSITORY="cosmitdev/env-setup"
 
 declare -r DOTFILES_ORIGIN="git@github.com:$GITHUB_REPOSITORY.git"
 declare -r DOTFILES_TARBALL_URL="http://github.com/$GITHUB_REPOSITORY/tarball/master"

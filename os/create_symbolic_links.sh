@@ -14,10 +14,8 @@ declare -a FILES_TO_SYMLINK=(
     "shell/curlrc"
     "shell/inputrc"
     "shell/screenrc"
-
     "git/gitattributes"
     "git/gitignore"
-
     "vim/vim"
     "vim/vimrc"
     "vim/gvimrc"
@@ -26,7 +24,6 @@ declare -a FILES_TO_SYMLINK=(
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 main() {
-
     local i=""
     local sourceFile=""
     local targetFile=""
@@ -55,7 +52,6 @@ main() {
         fi
 
     done
-
 }
 
 main

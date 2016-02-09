@@ -7,7 +7,6 @@ cd "$(dirname "${BASH_SOURCE}")" && source "../utils.sh"
 # ----------------------------------------------------------------------
 
 set_privacy_settings() {
-
     # Fix privacy related issues present in Ubuntu 12.10-14.04
     # https://fixubuntu.com/
     return $(wget -qO - https://fixubuntu.com/fixubuntu.sh | bash > /dev/null; echo $?)
@@ -18,7 +17,6 @@ set_privacy_settings() {
 # ----------------------------------------------------------------------
 
 set_ui_and_ux_settings() {
-
     # Hide the bluetooth and volume icons from the menu bar
     gsettings set com.canonical.indicator.bluetooth visible false
     gsettings set com.canonical.indicator.sound visible false
@@ -50,7 +48,6 @@ set_ui_and_ux_settings() {
         'opera-browser.desktop',
         'opera-next-browser.desktop'
     ]"
-
 }
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

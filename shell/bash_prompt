@@ -23,12 +23,12 @@ enable_color_support() {
                 && eval "$(dircolors -b ~/.dircolors)" \
                 || eval "$(dircolors -b)"
 
+            alias ls="ls --color=auto"
             alias dir="dir --color=auto"
+            alias grep="grep --color=auto"
+            alias vdir="vdir --color=auto"
             alias egrep="egrep --color=auto"
             alias fgrep="fgrep --color=auto"
-            alias grep="grep --color=auto"
-            alias ls="ls --color=auto"
-            alias vdir="vdir --color=auto"
 
         fi
     fi
@@ -53,7 +53,6 @@ set_ls_colors() {
     if [ "$OS" == "osx" ]; then
 
         LSCOLORS=""
-
         LSCOLORS+="gx" # Directory
         LSCOLORS+="fx" # Symbolic link
         LSCOLORS+="cx" # Socket
@@ -81,7 +80,6 @@ set_ls_colors() {
     elif [ "$OS" == "ubuntu" ]; then
 
         LS_COLORS=""
-
         LS_COLORS+="no=0;35:"   # global default
         LS_COLORS+="di=1;35:"   # directory
         LS_COLORS+="ex=0;32:"   # executable file
@@ -195,7 +193,6 @@ set_prompts() {
 
         bold=""
         reset="\e[0m"
-
         black="\e[1;30m"
         blue="\e[1;34m"
         cyan="\e[1;36m"

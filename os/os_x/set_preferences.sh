@@ -23,10 +23,8 @@ set_chrome_and_chrome_canary_preferences() {
 # ----------------------------------------------------------------------
 
 set_dashboard_preferences() {
-
     # Disable Dashboard
     defaults write com.apple.dashboard mcx-disabled -bool true
-
 }
 
 # ----------------------------------------------------------------------
@@ -34,7 +32,6 @@ set_dashboard_preferences() {
 # ----------------------------------------------------------------------
 
 set_dock_preferences() {
-
     # Automatically hide or show the Dock
     defaults write com.apple.dock autohide -bool true
 
@@ -67,7 +64,6 @@ set_dock_preferences() {
 
     # Set the icon size
     defaults write com.apple.dock tilesize -int 55
-
 }
 
 # ----------------------------------------------------------------------
@@ -75,12 +71,11 @@ set_dock_preferences() {
 # ----------------------------------------------------------------------
 
 set_finder_preferences() {
-
     # Automatically open a new Finder window when a volume is mounted
     defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
     defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
     defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
-    
+
     # Show hidden files
     defaults write com.apple.finder AppleShowAllFiles --bool true
 
@@ -122,38 +117,35 @@ set_finder_preferences() {
     # Show all filename extensions
     defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-    # For icons on the desktop and in other icon views:
+    # Set size for icons on the desktop and in other icon views:
+    /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 72" ~/Library/Preferences/com.apple.finder.plist
+    /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 72" ~/Library/Preferences/com.apple.finder.plist
+    /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 72" ~/Library/Preferences/com.apple.finder.plist
 
-        # Set size
-        /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 72" ~/Library/Preferences/com.apple.finder.plist
-        /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 72" ~/Library/Preferences/com.apple.finder.plist
-        /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 72" ~/Library/Preferences/com.apple.finder.plist
+    # Set grid spacing size
+    /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 1" ~/Library/Preferences/com.apple.finder.plist
+    /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:gridSpacing 1" ~/Library/Preferences/com.apple.finder.plist
+    /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:gridSpacing 1" ~/Library/Preferences/com.apple.finder.plist
 
-        # Set grid spacing size
-        /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 1" ~/Library/Preferences/com.apple.finder.plist
-        /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:gridSpacing 1" ~/Library/Preferences/com.apple.finder.plist
-        /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:gridSpacing 1" ~/Library/Preferences/com.apple.finder.plist
+    # Set label text size
+    /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:textSize 13" ~/Library/Preferences/com.apple.finder.plist
+    /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:textSize 13" ~/Library/Preferences/com.apple.finder.plist
+    /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:textSize 13" ~/Library/Preferences/com.apple.finder.plist
 
-        # Set label text size
-        /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:textSize 13" ~/Library/Preferences/com.apple.finder.plist
-        /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:textSize 13" ~/Library/Preferences/com.apple.finder.plist
-        /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:textSize 13" ~/Library/Preferences/com.apple.finder.plist
+    # Set label position
+    /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:labelOnBottom true" ~/Library/Preferences/com.apple.finder.plist
+    /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:labelOnBottom true" ~/Library/Preferences/com.apple.finder.plist
+    /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:labelOnBottom true" ~/Library/Preferences/com.apple.finder.plist
 
-        # Set label position
-        /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:labelOnBottom true" ~/Library/Preferences/com.apple.finder.plist
-        /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:labelOnBottom true" ~/Library/Preferences/com.apple.finder.plist
-        /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:labelOnBottom true" ~/Library/Preferences/com.apple.finder.plist
+    # Show item info
+    /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
+    /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
+    /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
 
-        # Show item info
-        /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
-        /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
-        /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
-
-        # Set sort method
-        /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy none" ~/Library/Preferences/com.apple.finder.plist
-        /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy none" ~/Library/Preferences/com.apple.finder.plist
-        /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy none" ~/Library/Preferences/com.apple.finder.plist
-
+    # Set sort method
+    /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy none" ~/Library/Preferences/com.apple.finder.plist
+    /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy none" ~/Library/Preferences/com.apple.finder.plist
+    /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy none" ~/Library/Preferences/com.apple.finder.plist
 }
 
 # ----------------------------------------------------------------------
@@ -161,7 +153,6 @@ set_finder_preferences() {
 # ----------------------------------------------------------------------
 
 set_keyboard_preferences() {
-
     # Enable full keyboard access for all controls
     # (e.g. enable Tab in modal dialogs)
     defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
@@ -180,7 +171,6 @@ set_keyboard_preferences() {
 
     # Disable smart dashes
     defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
-
 }
 
 # ----------------------------------------------------------------------
@@ -188,14 +178,12 @@ set_keyboard_preferences() {
 # ----------------------------------------------------------------------
 
 set_maps_preferences() {
-
     # Set view options
     defaults write com.apple.Maps LastClosedWindowViewOptions "{
         localizeLabels = 1;   // show labels in English
         mapType = 11;         // show hybrid map
         trafficEnabled = 0;   // do not show traffic
     }"
-
 }
 
 # ----------------------------------------------------------------------
@@ -203,7 +191,6 @@ set_maps_preferences() {
 # ----------------------------------------------------------------------
 
 set_safari_preferences() {
-
     # Disable opening `safe` files automatically
     defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
@@ -236,7 +223,6 @@ set_safari_preferences() {
 
     # Add a context menu item for showing the `Web Inspector` in web views
     defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
-
 }
 
 # ----------------------------------------------------------------------
@@ -244,7 +230,6 @@ set_safari_preferences() {
 # ----------------------------------------------------------------------
 
 set_terminal_preferences() {
-
     # Make the focus automatically follow the mouse
     defaults write com.apple.terminal FocusFollowsMouse -string true
 
@@ -305,14 +290,12 @@ EOD
 # ----------------------------------------------------------------------
 
 set_textedit_preferences() {
-
     # Open and save files as UTF-8 encoded
     defaults write com.apple.TextEdit PlainTextEncoding -int 4
     defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
     # Use plain text mode for new documents
     defaults write com.apple.TextEdit RichText -int 0
-
 }
 
 # ----------------------------------------------------------------------
@@ -320,7 +303,6 @@ set_textedit_preferences() {
 # ----------------------------------------------------------------------
 
 set_trackpad_preferences() {
-
     # Enable `Tap to click`
     defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
     defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
@@ -331,7 +313,6 @@ set_trackpad_preferences() {
     defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
     defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 0
     defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 0
-
 }
 
 # ----------------------------------------------------------------------
@@ -339,7 +320,6 @@ set_trackpad_preferences() {
 # ----------------------------------------------------------------------
 
 set_ui_and_ux_preferences() {
-
     # Avoid creating `.DS_Store` files on network volumes
     defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
@@ -423,7 +403,6 @@ set_ui_and_ux_preferences() {
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 main() {
-
     declare -a PROCESSES_TO_TERMINATE=(
         "Dock"
         "Finder"
@@ -449,7 +428,6 @@ main() {
     for i in ${!PROCESSES_TO_TERMINATE[*]}; do
 	    killall "$i" &> /dev/null
     done
-
 }
 
 main

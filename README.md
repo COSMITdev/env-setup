@@ -1,4 +1,4 @@
-# [CODELAND](https://github.com/codelandev)’s init-setup
+# [COSMIT](https://github.com/cosmitdev)’s env-setup
 
 ## Setup
 
@@ -6,8 +6,8 @@ To setup the dotfiles just run one of the following snippets in the terminal:
 
 | OS | Snippet |
 |:---:|:---|
-| OS X | `bash -c "$(curl -LsS https://raw.github.com/codelandev/init-setup/master/setup)"` |
-| Ubuntu | `bash -c "$(wget -qO - https://raw.github.com/codelandev/init-setup/master/setup)"` |
+| OS X | `bash -c "$(curl -LsS https://raw.github.com/cosmitdev/env-setup/master/setup)"` |
+| Ubuntu | `bash -c "$(wget -qO - https://raw.github.com/cosmitdev/env-setup/master/setup)"` |
 
 That's it! :sparkles:
 
@@ -55,7 +55,7 @@ The setup process will:
     <tbody>
         <tr>
             <td>
-                <img src="https://raw.githubusercontent.com/codelandev/init-setup/images/images/Screen%20Shot%202015-03-15%20at%201.02.38%20AM.png" alt="Output for Git status on OS X" width="100%">
+                <img src="https://raw.githubusercontent.com/cosmitdev/env-setup/images/images/Screen%20Shot%202015-03-15%20at%201.02.38%20AM.png" alt="Output for Git status on OS X" width="100%">
             </td>
             <td>
                 <img src="https://cloud.githubusercontent.com/assets/1223565/6263677/82b4d432-b823-11e4-9832-69a27da75dda.png" alt="Output for Git status on Ubuntu" width="100%">
@@ -130,10 +130,10 @@ The setup process will:
     <tbody>
         <tr>
             <td>
-              <img src="https://raw.githubusercontent.com/codelandev/init-setup/images/images/Screen%20Shot%202015-03-10%20at%206.35.57%20PM.png" alt="Sublime Text on OS X" width="100%">
+              <img src="https://raw.githubusercontent.com/cosmitdev/env-setup/images/images/Screen%20Shot%202015-03-10%20at%206.35.57%20PM.png" alt="Sublime Text on OS X" width="100%">
             </td>
             <td>
-              <img src="https://raw.githubusercontent.com/codelandev/init-setup/images/images/Screen%20Shot%202015-03-10%20at%206.35.57%20PM.png" alt="Sublime Text ON Ubuntu" width="100%">
+              <img src="https://raw.githubusercontent.com/cosmitdev/env-setup/images/images/Screen%20Shot%202015-03-10%20at%206.35.57%20PM.png" alt="Sublime Text ON Ubuntu" width="100%">
             </td>
         </tr>
         <tr>
@@ -154,7 +154,7 @@ requirements by using the following files:
 
 If the `~/.bash.local` file exist, it will be automatically sourced
 after all the other [bash related
-files](https://github.com/codelandev/init-setup/tree/master/shell), thus,
+files](https://github.com/cosmitdev/env-setup/tree/master/shell), thus,
 allowing its content to add to or overwrite the existing aliases,
 settings, PATH, etc.
 
@@ -164,8 +164,8 @@ Here is a very simple example of a `~/.bash.local` file:
 
 #!/bin/bash
 
-declare -r GIT_USER_EMAIL="codeland@example.com"
-declare -r GIT_USER_NAME="CODELAND web development"
+declare -r GIT_USER_EMAIL="cosmitd@example.com"
+declare -r GIT_USER_NAME="COSMIT web development"
 
 # ----------------------------------------------------------------------
 
