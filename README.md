@@ -125,24 +125,6 @@ The setup process will:
     </tbody>
 </table>
 
-* Sublime Text
-  <table>
-    <tbody>
-        <tr>
-            <td>
-              <img src="https://raw.githubusercontent.com/cosmitdev/env-setup/images/images/Screen%20Shot%202015-03-10%20at%206.35.57%20PM.png" alt="Sublime Text on OS X" width="100%">
-            </td>
-            <td>
-              <img src="https://raw.githubusercontent.com/cosmitdev/env-setup/images/images/Screen%20Shot%202015-03-10%20at%206.35.57%20PM.png" alt="Sublime Text ON Ubuntu" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td align="center">OS X</td>
-            <td align="center">Ubuntu</td>
-        </tr>
-    </tbody>
-</table>
-
 ## Customize
 
 ### Local Settings
