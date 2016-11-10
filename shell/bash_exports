@@ -39,11 +39,3 @@ export MANPAGER="less -X"
 # Make new shells get the history lines from all previous
 # shells instead of the default "last window closed" history
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
-
-# Set default paths to gems and ruby version to homebrew when OSX
-if [ "$OS" == "osx" ]; then
-  export PATH=$HOME/.rbenv/shims:$PATH
-  export RBENV_ROOT="$(brew --prefix rbenv)"
-  export GEM_HOME="$(brew --prefix)/opt/gems"
-  export GEM_PATH="$(brew --prefix)/opt/gems"
-fi
