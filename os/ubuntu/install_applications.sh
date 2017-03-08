@@ -27,7 +27,6 @@ declare -a APT_PACKAGES=(
     "xclip"
     "postgresql"
     "postgresql-contrib"
-    "sublime-text"
     "terminator"
 )
 
