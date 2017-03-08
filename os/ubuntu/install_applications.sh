@@ -16,7 +16,6 @@ declare -a APT_PACKAGES=(
 
     # Other
     "curl"
-    "firefox-trunk"
     "flashplugin-installer"
     "git"
     "google-chrome"
@@ -43,11 +42,6 @@ add_ppa() {
 }
 
 add_software_sources() {
-
-    # Sublime Text 2
-    [ $(cmd_exists "sublime-text") -eq 1 ] \
-        && add_ppa "ppa:webupd8team/sublime-text-2"
-
     # Firefox Nightly
     [ $(cmd_exists "firefox-trunk") -eq 1 ] \
         && add_ppa "ubuntu-mozilla-daily/ppa"
