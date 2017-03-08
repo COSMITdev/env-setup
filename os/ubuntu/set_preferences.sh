@@ -39,14 +39,7 @@ set_ui_and_ux_settings() {
 
     # Set Launcher favorites
     gsettings set com.canonical.Unity.Launcher favorites "[
-        'ubiquity-gtkui.desktop',
-        'nautilus-home.desktop',
-        'chromium-browser.desktop',
-        'google-chrome.desktop',
-        'firefox.desktop',
-        'firefox-trunk.desktop',
-        'opera-browser.desktop',
-        'opera-next-browser.desktop'
+        'google-chrome.desktop'
     ]"
 }
 
