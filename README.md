@@ -29,21 +29,21 @@ The setup process will:
   [Ubuntu](os/ubuntu/set_preferences.sh) preferences
 * Install [vim plugins](vim/vim/plugins)
 
-  <table>
-    <tbody>
-        <tr>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/6079359/df4df582-ae0c-11e4-8643-db7c251284d6.gif" alt="Setup process" width="100%">
-            </td>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/6066251/68211e00-ad74-11e4-88e0-62048ff12fad.gif" alt="Setup process" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td align="center">OS X</td>
-            <td align="center">Ubuntu</td>
-        </tr>
-    </tbody>
+<table>
+  <tbody>
+      <tr>
+          <td>
+              <img src="https://cloud.githubusercontent.com/assets/1223565/6079359/df4df582-ae0c-11e4-8643-db7c251284d6.gif" alt="Setup process" width="100%">
+          </td>
+          <td>
+              <img src="https://cloud.githubusercontent.com/assets/1223565/6066251/68211e00-ad74-11e4-88e0-62048ff12fad.gif" alt="Setup process" width="100%">
+          </td>
+      </tr>
+      <tr>
+          <td align="center">OS X</td>
+          <td align="center">Ubuntu</td>
+      </tr>
+  </tbody>
 </table>
 
 
@@ -51,78 +51,79 @@ The setup process will:
 
 * Output for Git status
 
-  <table>
-    <tbody>
-        <tr>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1644530/12922769/f560f640-cf39-11e5-9fb4-a3bae076ab1f.png" alt="Output for Git status on OS X" width="100%">
-            </td>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/6263677/82b4d432-b823-11e4-9832-69a27da75dda.png" alt="Output for Git status on Ubuntu" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td align="center">OS X</td>
-            <td align="center">Ubuntu</td>
-        </tr>
-    </tbody>
+<table>
+  <tbody>
+      <tr>
+          <td>
+              <img src="https://cloud.githubusercontent.com/assets/1644530/12922769/f560f640-cf39-11e5-9fb4-a3bae076ab1f.png" alt="Output for Git status on OS X" width="100%">
+          </td>
+          <td>
+              <img src="https://cloud.githubusercontent.com/assets/1223565/6263677/82b4d432-b823-11e4-9832-69a27da75dda.png" alt="Output for Git status on Ubuntu" width="100%">
+          </td>
+      </tr>
+      <tr>
+          <td align="center">OS X</td>
+          <td align="center">Ubuntu</td>
+      </tr>
+  </tbody>
 </table>
 
 * Output for Git log
 
-  <table>
-    <tbody>
-        <tr>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/6263680/82b7ecd0-b823-11e4-80cb-c0b59879a809.png" alt="Output for Git status on OS X" width="100%">
-            </td>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/6263681/82ba0d80-b823-11e4-9cc0-e722fe340fb4.png" alt="Output for Git log on OS X" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td align="center">OS X</td>
-            <td align="center">Ubuntu</td>
-        </tr>
-    </tbody>
+<table>
+  <tbody>
+      <tr>
+          <td>
+              <img src="https://cloud.githubusercontent.com/assets/1223565/6263680/82b7ecd0-b823-11e4-80cb-c0b59879a809.png" alt="Output for Git status on OS X" width="100%">
+          </td>
+          <td>
+              <img src="https://cloud.githubusercontent.com/assets/1223565/6263681/82ba0d80-b823-11e4-9cc0-e722fe340fb4.png" alt="Output for Git log on OS X" width="100%">
+          </td>
+      </tr>
+      <tr>
+          <td align="center">OS X</td>
+          <td align="center">Ubuntu</td>
+      </tr>
+  </tbody>
 </table>
 
 * gVim
 
-  <table>
-    <tbody>
-        <tr>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/6263678/82b76a26-b823-11e4-866b-f7c3605d6225.png" alt="MacVim" width="100%">
-            </td>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/6263675/828dc78e-b823-11e4-86b1-d5116a8868c2.png" alt="Gnome Vim" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td align="center">OS X (MacVim)</td>
-            <td align="center">Ubuntu (Gnome Vim)</td>
-        </tr>
-    </tbody>
+<table>
+  <tbody>
+      <tr>
+          <td>
+              <img src="https://cloud.githubusercontent.com/assets/1223565/6263678/82b76a26-b823-11e4-866b-f7c3605d6225.png" alt="MacVim" width="100%">
+          </td>
+          <td>
+              <img src="https://cloud.githubusercontent.com/assets/1223565/6263675/828dc78e-b823-11e4-86b1-d5116a8868c2.png" alt="Gnome Vim" width="100%">
+          </td>
+      </tr>
+      <tr>
+          <td align="center">OS X (MacVim)</td>
+          <td align="center">Ubuntu (Gnome Vim)</td>
+      </tr>
+  </tbody>
 </table>
 
 
 * Vim
-  <table>
-    <tbody>
-        <tr>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/6263682/82ce0128-b823-11e4-95f4-5b78d5e13ffb.png" alt="Vim on OS X" width="100%">
-            </td>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/1223565/6263676/82b4346e-b823-11e4-867b-260be48c5771.png" alt="Vim on Ubuntu" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td align="center">OS X</td>
-            <td align="center">Ubuntu</td>
-        </tr>
-    </tbody>
+
+<table>
+  <tbody>
+      <tr>
+          <td>
+              <img src="https://cloud.githubusercontent.com/assets/1223565/6263682/82ce0128-b823-11e4-95f4-5b78d5e13ffb.png" alt="Vim on OS X" width="100%">
+          </td>
+          <td>
+              <img src="https://cloud.githubusercontent.com/assets/1223565/6263676/82b4346e-b823-11e4-867b-260be48c5771.png" alt="Vim on Ubuntu" width="100%">
+          </td>
+      </tr>
+      <tr>
+          <td align="center">OS X</td>
+          <td align="center">Ubuntu</td>
+      </tr>
+  </tbody>
 </table>
 
 ## Customize
